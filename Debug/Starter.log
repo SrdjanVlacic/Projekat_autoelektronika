@@ -1,0 +1,5 @@
+﻿  main_application.c
+C:\Users\PC\Desktop\AutoelektronikaProjekat-master\AutoelektronikaProjekat-master\main_application.c(173,42): warning C4244: '=': conversion from 'double' to 'uint16_t', possible loss of data
+C:\Users\PC\Desktop\AutoelektronikaProjekat-master\AutoelektronikaProjekat-master\main_application.c(234,21): warning C4244: '=': conversion from 'float' to 'uint16_t', possible loss of data
+C:\Users\PC\Desktop\AutoelektronikaProjekat-master\AutoelektronikaProjekat-master\main_application.c(228,29): warning C4101: 'prom1': unreferenced local variable
+  Starter.vcxproj -> C:\Users\PC\Desktop\AutoelektronikaProjekat-master\AutoelektronikaProjekat-master\Debug\Starter.exe
