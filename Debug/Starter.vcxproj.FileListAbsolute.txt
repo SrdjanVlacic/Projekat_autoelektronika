@@ -1,1 +1,2 @@
 C:\Users\PC\Desktop\AutoelektronikaProjekat-master\AutoelektronikaProjekat-master\Debug\Starter.exe
+C:\Users\PC\Desktop\Projekat_autoelektronika\Debug\Starter.exe
