@@ -16,7 +16,7 @@ void vApplicationStackOverflowHook(TaskHandle_t pxTask, char* pcTaskName);
 /*
  * main_demo() is used as the main task
  */
-void main_demo( void );
+extern void main_demo( void );
 
 int main( void )
 {

@@ -1,7 +1,2 @@
 ﻿  main_application.c
-C:\Users\PC\Desktop\Projekat_autoelektronika\main_application.c(238,58): warning C4244: 'function': conversion from 'const uint16_t' to 'uint8_t', possible loss of data
-C:\Users\PC\Desktop\Projekat_autoelektronika\main_application.c(241,57): warning C4244: 'function': conversion from 'const uint16_t' to 'uint8_t', possible loss of data
-C:\Users\PC\Desktop\Projekat_autoelektronika\main_application.c(244,56): warning C4244: 'function': conversion from 'const uint16_t' to 'uint8_t', possible loss of data
-C:\Users\PC\Desktop\Projekat_autoelektronika\main_application.c(247,39): warning C4244: 'function': conversion from 'const uint16_t' to 'uint8_t', possible loss of data
-C:\Users\PC\Desktop\Projekat_autoelektronika\main_application.c(229,29): warning C4101: 'prom1': unreferenced local variable
   Starter.vcxproj -> C:\Users\PC\Desktop\Projekat_autoelektronika\Debug\Starter.exe
