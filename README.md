@@ -53,7 +53,7 @@ funkcija koja aktivira planer za raspoređivanje taskova.
 ###### Predlog simulacije celog sistema
 Prvo otvoriti sve periferije na način opisan gore. Pokrenuti program. U prozoru AdvUniCom softvera kanala 0, neophodno je uneti \00 početak poruke, zatim 10vrednosti u hex obliku npr.
 \01\02\03\04\05\06\07\08\09\0a a zatim \ff koji označava kraj poruke. Vrednosti se mogu slati samo od 01-0a. Na taj način dobijamo trenutnu količinu kiše.
-Zatim na UniCom1 neophodno je kalibrisati senzor, njegovi pragovi su na poćetku postavljeni na 250,500,750. Da bi ove pragove promenili unosimo prouku u obliku NK1300CR, NK2600CR, NK3800CR.
+Zatim na UniCom1 neophodno je kalibrisati senzor, njegovi pragovi su na početku postavljeni na 250,500,750. Da bi ove pragove promenili unosimo prouku u obliku NK1300CR, NK2600CR, NK3800CR.
 Na ovaj način smo namestili pragove senzora. Takodje neophodno je uneti i režim rada brisača, na početku režim rada je automatski, režim se menja na UniCom1 porukom MCR odnosno ACR za povratak u automatski režim rada.
 Na osnovu svega unetog do sad na UniCom1 se moze iscitati trenutna vrednost kiše, režim rada brisača kao i da li oni uopšte i rade. Zatim u zavisnosti da li je uključen automatski ili manuelni režim rada imamo kontrolu brzine brisača.
 U manuelnom režimu rada brzina se menja uključivanjem prekidača na prvom stupcu desnim klikom na taster. Donji taster je prva brzina, donja dva tastera druga brzina a donja tri tastera treća.
