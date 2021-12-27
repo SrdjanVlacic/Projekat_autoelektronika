@@ -59,5 +59,5 @@ Na osnovu svega unetog do sad na UniCom1 se moze iscitati trenutna vrednost kiš
 U manuelnom režimu rada brzina se menja uključivanjem prekidača na prvom stupcu desnim klikom na taster. Donji taster je prva brzina, donja dva tastera druga brzina a donja tri tastera treća.
 U drugom stupcu ukoliko su upaljeni brisači (brzina rada 1 ili veća) svetleće dioda, a u trećem stupcu će svetleti diode koje reprezentuju brzinu rada brisača.
 Ukoliko je režim automatski u zavisnosti od pragova i trenutne količine kiše imamo takodje tri brzine rada. Ukoliko je trenutna vrednost kiše manja od prbog praga neće raditi brisači,
-ukoliko je iymedju praga 1 i 2 brzina brisača je 1 i radiće jedna dioda u trećem stupcu itd. Na LCD-u će biti ispisano 0 ako je režim rada automatski,
+ukoliko je iymedju praga 1 i 2 brzina brisača je 1 i radiće jedna dioda u trećem stupcu itd. Na LCD-u će biti ispisano 0 ako je režim rada automatski, 
 zatim 1 ako je manuelni zatim prazno polje pa ide trenutna brzina rada brisača, zatim opet prazno polje i na kraju 4 cifre koje predstavljaju trenutnu vrednost kiše.
