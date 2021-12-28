@@ -20,11 +20,12 @@ Ukoliko uključimo brisače svetleće dioda u drugom stupcu.
 pragova koje smo prethodno podesili. Ukoliko je vrednos kiše manja od praga1, brisači neće raditi, ukoliko je izmedju praga1 i praga2 svetleće jedna dioda
 u trećeme stupcu i predstavlja brzinu1, ukoliko je izmedju praga2 i praga3 svetleće dve diode u trećem stupcu i označava brzinu2,
 a ukoliko je vrednost kiše veća od praga3 svetleće 3diode u trećem stupcu i označava brzinu3.
-8. Na LCD displeju će pisati režim rada brisača(0 automatski, 1 manuelni), zatim brzinu rada brisača kao i trenutnu vrednost količine kiše.
+8. Na LCD displeju će pisati režim rada brisača(0 automatski, 1 manuelni), zatim brzinu rada brisača kao i u 
+zavisnosti od pritisnutog tastera na led barsu imamo maksimalnu, minimalnu ili trenutnu vrednost količine kiše.
 
 #### Periferije
 Periferije koje je potrebno koristiti su LED_bar, 7seg displej i AdvUniCom softver za simulaciju serijske komunikacije.
-Prilikom pokretanja LED_bars_plus.exe navesti rRR kao argument da bi se dobio led bar sa 1 izlaznim i 2 ulazna stupca crvene boje.
+Prilikom pokretanja LED_bars_plus.exe navesti rRRr kao argument da bi se dobio led bar sa 2 izlazna i 2 ulazna stupca crvene boje.
 Prilikom pokretanja Seg7_Mux.exe navesti kao argument broj 8, kako bi se dobio 7-seg displej sa 8 cifara.
 Što se tiče serijske komunikacije, potrebno je otvoriti i kanal 0 i kanal 1. Kanal 0 se automatski otvara pokretanjem AdvUniCom.exe,
 a kanal 1 otvoriti dodavanjem broja jedan kao argument: AdvUniCom.exe 1
@@ -46,7 +47,9 @@ Na osnovu režima rada kao i vrednosti trenutne količine kiše i pragova senzor
 odgovarajuće diode u drugom i trećem stupcu, dok u slučaju manuelnog režima rada pali brisače(diode)
 pritiskanje tastera prvog stupca. Na LCD-u ispisuje 0(automaski režim), 1(manuelni režim), zatim brzinu rada
 brisača kao i trenutnu vrednost količine kiše. 
-6. void main_demo(void)- U ovoj funkciji se vrši inicijalizacija svih periferija koje se koriste,
+6. set_sev_seg_Task(void* pvParameters) u zavisnosti od pritisnutog tastera na Led baru(stubac 3) na LCD-u
+ispisujemo maksimalnu(taster 3), minimalnu(taster 1) ili trenutnu količinu kiše(taster 2).
+7. void main_demo(void)- U ovoj funkciji se vrši inicijalizacija svih periferija koje se koriste,
 kreiraju se taskovi, semafori i red, definiše se interrupt za serijsku komunikaciju i poziva vTaskStartScheduler()
 funkcija koja aktivira planer za raspoređivanje taskova.
 
@@ -60,4 +63,5 @@ U manuelnom režimu rada brzina se menja uključivanjem prekidača na prvom stup
 U drugom stupcu ukoliko su upaljeni brisači (brzina rada 1 ili veća) svetleće dioda, a u trećem stupcu će svetleti diode koje reprezentuju brzinu rada brisača.
 Ukoliko je režim automatski u zavisnosti od pragova i trenutne količine kiše imamo takodje tri brzine rada. Ukoliko je trenutna vrednost kiše manja od prbog praga neće raditi brisači,
 ukoliko je iymedju praga 1 i 2 brzina brisača je 1 i radiće jedna dioda u trećem stupcu itd. Na LCD-u će biti ispisano 0 ako je režim rada automatski, 
-zatim 1 ako je manuelni zatim prazno polje pa ide trenutna brzina rada brisača, zatim opet prazno polje i na kraju 4 cifre koje predstavljaju trenutnu vrednost kiše.
+zatim 1 ako je manuelni zatim prazno polje pa ide trenutna brzina rada brisača, zatim opet prazno polje i na kraju 4 cifre koje služe za 
+predstavljanje minimalne, maksimalne ili trenutne količine kiše u zavisnosti od pritisnutog tastera na led baru.
