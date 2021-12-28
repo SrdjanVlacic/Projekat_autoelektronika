@@ -20,7 +20,7 @@ Ukoliko uključimo brisače svetleće dioda u drugom stupcu.
 pragova koje smo prethodno podesili. Ukoliko je vrednos kiše manja od praga1, brisači neće raditi, ukoliko je izmedju praga1 i praga2 svetleće jedna dioda
 u trećeme stupcu i predstavlja brzinu1, ukoliko je izmedju praga2 i praga3 svetleće dve diode u trećem stupcu i označava brzinu2,
 a ukoliko je vrednost kiše veća od praga3 svetleće 3diode u trećem stupcu i označava brzinu3.
-8. Na LCD displeju će pisati režim rada brisača (0 automatski, 1 manuelni), zatim brzinu rada brisača kao i trenutnu vrednost količine kiše.
+8. Na LCD displeju će pisati režim rada brisača(0 automatski, 1 manuelni), zatim brzinu rada brisača kao i trenutnu vrednost količine kiše.
 
 #### Periferije
 Periferije koje je potrebno koristiti su LED_bar, 7seg displej i AdvUniCom softver za simulaciju serijske komunikacije.

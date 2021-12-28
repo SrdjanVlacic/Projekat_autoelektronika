@@ -1,2 +1,3 @@
 ﻿  main_application.c
+C:\Users\PC\Desktop\Projekat_autoelektronika\main_application.c(267,11): warning C4101: 'prom': unreferenced local variable
   Starter.vcxproj -> C:\Users\PC\Desktop\Projekat_autoelektronika\Debug\Starter.exe
